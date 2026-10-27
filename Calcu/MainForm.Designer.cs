@@ -46,6 +46,7 @@ namespace Calcu
 			this.btnDiv = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
 			this.btnMod = new System.Windows.Forms.Button();
+			this.btnFormulag = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -80,7 +81,7 @@ namespace Calcu
 			// 
 			// btnSuma
 			// 
-			this.btnSuma.Location = new System.Drawing.Point(68, 164);
+			this.btnSuma.Location = new System.Drawing.Point(12, 164);
 			this.btnSuma.Name = "btnSuma";
 			this.btnSuma.Size = new System.Drawing.Size(100, 66);
 			this.btnSuma.TabIndex = 4;
@@ -90,7 +91,7 @@ namespace Calcu
 			// 
 			// btnResta
 			// 
-			this.btnResta.Location = new System.Drawing.Point(198, 164);
+			this.btnResta.Location = new System.Drawing.Point(134, 164);
 			this.btnResta.Name = "btnResta";
 			this.btnResta.Size = new System.Drawing.Size(100, 66);
 			this.btnResta.TabIndex = 5;
@@ -100,7 +101,7 @@ namespace Calcu
 			// 
 			// btnMul
 			// 
-			this.btnMul.Location = new System.Drawing.Point(12, 249);
+			this.btnMul.Location = new System.Drawing.Point(249, 164);
 			this.btnMul.Name = "btnMul";
 			this.btnMul.Size = new System.Drawing.Size(100, 66);
 			this.btnMul.TabIndex = 6;
@@ -110,7 +111,7 @@ namespace Calcu
 			// 
 			// btnDiv
 			// 
-			this.btnDiv.Location = new System.Drawing.Point(134, 249);
+			this.btnDiv.Location = new System.Drawing.Point(12, 249);
 			this.btnDiv.Name = "btnDiv";
 			this.btnDiv.Size = new System.Drawing.Size(100, 66);
 			this.btnDiv.TabIndex = 7;
@@ -127,7 +128,7 @@ namespace Calcu
 			// 
 			// btnMod
 			// 
-			this.btnMod.Location = new System.Drawing.Point(249, 249);
+			this.btnMod.Location = new System.Drawing.Point(134, 249);
 			this.btnMod.Name = "btnMod";
 			this.btnMod.Size = new System.Drawing.Size(100, 66);
 			this.btnMod.TabIndex = 9;
@@ -135,11 +136,22 @@ namespace Calcu
 			this.btnMod.UseVisualStyleBackColor = true;
 			this.btnMod.Click += new System.EventHandler(this.BtnModClick);
 			// 
+			// btnFormulag
+			// 
+			this.btnFormulag.Location = new System.Drawing.Point(249, 249);
+			this.btnFormulag.Name = "btnFormulag";
+			this.btnFormulag.Size = new System.Drawing.Size(100, 66);
+			this.btnFormulag.TabIndex = 10;
+			this.btnFormulag.Text = "Formula general";
+			this.btnFormulag.UseVisualStyleBackColor = true;
+			this.btnFormulag.Click += new System.EventHandler(this.BtnFormulagClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(361, 469);
+			this.Controls.Add(this.btnFormulag);
 			this.Controls.Add(this.btnMod);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnDiv);
@@ -155,6 +167,7 @@ namespace Calcu
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnFormulag;
 		private System.Windows.Forms.Button btnMod;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnDiv;

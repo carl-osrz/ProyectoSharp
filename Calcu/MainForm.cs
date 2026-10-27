@@ -74,5 +74,11 @@ namespace Calcu
 			resultado = num1 % num2;
 			lblRespuesta.Text = resultado.ToString();
 		}
+		
+		void BtnFormulagClick(object sender, EventArgs e)
+		{
+			Form1 j = new Form1();
+			j.Show();
+		}
 	}
 }
