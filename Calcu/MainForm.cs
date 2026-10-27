@@ -65,5 +65,14 @@ namespace Calcu
 			resultado = num1 / num2;
 			lblRespuesta.Text = resultado.ToString();
 		}
+		
+		void BtnModClick(object sender, EventArgs e)
+		{
+			double num1, num2, resultado;
+			num1 = Convert.ToDouble(txt1.Text);
+			num2 = Convert.ToDouble(txt2.Text);
+			resultado = num1 % num2;
+			lblRespuesta.Text = resultado.ToString();
+		}
 	}
 }

@@ -45,6 +45,7 @@ namespace Calcu
 			this.btnMul = new System.Windows.Forms.Button();
 			this.btnDiv = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
+			this.btnMod = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -79,7 +80,7 @@ namespace Calcu
 			// 
 			// btnSuma
 			// 
-			this.btnSuma.Location = new System.Drawing.Point(43, 182);
+			this.btnSuma.Location = new System.Drawing.Point(68, 164);
 			this.btnSuma.Name = "btnSuma";
 			this.btnSuma.Size = new System.Drawing.Size(100, 66);
 			this.btnSuma.TabIndex = 4;
@@ -89,7 +90,7 @@ namespace Calcu
 			// 
 			// btnResta
 			// 
-			this.btnResta.Location = new System.Drawing.Point(210, 182);
+			this.btnResta.Location = new System.Drawing.Point(198, 164);
 			this.btnResta.Name = "btnResta";
 			this.btnResta.Size = new System.Drawing.Size(100, 66);
 			this.btnResta.TabIndex = 5;
@@ -99,7 +100,7 @@ namespace Calcu
 			// 
 			// btnMul
 			// 
-			this.btnMul.Location = new System.Drawing.Point(43, 283);
+			this.btnMul.Location = new System.Drawing.Point(12, 249);
 			this.btnMul.Name = "btnMul";
 			this.btnMul.Size = new System.Drawing.Size(100, 66);
 			this.btnMul.TabIndex = 6;
@@ -109,7 +110,7 @@ namespace Calcu
 			// 
 			// btnDiv
 			// 
-			this.btnDiv.Location = new System.Drawing.Point(210, 283);
+			this.btnDiv.Location = new System.Drawing.Point(134, 249);
 			this.btnDiv.Name = "btnDiv";
 			this.btnDiv.Size = new System.Drawing.Size(100, 66);
 			this.btnDiv.TabIndex = 7;
@@ -119,16 +120,27 @@ namespace Calcu
 			// 
 			// lblRespuesta
 			// 
-			this.lblRespuesta.Location = new System.Drawing.Point(30, 374);
+			this.lblRespuesta.Location = new System.Drawing.Point(33, 336);
 			this.lblRespuesta.Name = "lblRespuesta";
 			this.lblRespuesta.Size = new System.Drawing.Size(294, 86);
 			this.lblRespuesta.TabIndex = 8;
+			// 
+			// btnMod
+			// 
+			this.btnMod.Location = new System.Drawing.Point(249, 249);
+			this.btnMod.Name = "btnMod";
+			this.btnMod.Size = new System.Drawing.Size(100, 66);
+			this.btnMod.TabIndex = 9;
+			this.btnMod.Text = "%";
+			this.btnMod.UseVisualStyleBackColor = true;
+			this.btnMod.Click += new System.EventHandler(this.BtnModClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(361, 469);
+			this.Controls.Add(this.btnMod);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnDiv);
 			this.Controls.Add(this.btnMul);
@@ -143,6 +155,7 @@ namespace Calcu
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnMod;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnDiv;
 		private System.Windows.Forms.Button btnMul;
